@@ -55,8 +55,10 @@ h2{
     font-family: "Playfair";
     font-size: 20pt;
 }
-h5{
-    color:var(--blanco);
+.texto{
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
 }
 
 .navbar{
@@ -145,14 +147,30 @@ footer svg {
   margin: 2rem auto;
   
 }
-
+.carousel .card{
+    width: auto;
+    align-self: center;
+    border-radius: 30pt;
+    background-color: var(--blanco);
+    box-shadow:  1px 1px 3px 1px var(--negro);
+}
+.col-md-6 .card{
+    width: 70%;
+}
 #Cambio {
     background-color: var(--colorSecundario);
     color: var(--blanco);
 
 }
-h5{
-    font-family: "Playfair";
+.carousel-indicators{
+    margin-bottom: 0% !important;
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--colorPrincipal);
+    height: 5px;
+    width: 40px;
+    border-radius:47%;
+
 }
 #Cambio h5{
     color: var(--blanco);
@@ -176,19 +194,13 @@ h5{
     border-radius: 30pt;
 }
 #Vino{
-        background-color: var(--contraste);
-    border: 2px solid var(--colorSecundario);
+    background-color: var(--blanco);
     margin-bottom: 2rem;
 }
 #Blanco, #Tinto,#Formulario{
     background-color: var(--colorPrincipal);
 }
 
-.card-img-cata {
-    height: 300px; 
-    object-fit: contain; 
-    width: 100%;
-}
 
 .card-body h5 {
     color: var(--colorSecundario);
@@ -236,6 +248,32 @@ form button:hover {
 footer h5:hover{
     text-decoration:underline;
 }
+.carousel-inner{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+.carousel-indicators button{
+    color: var(--colorSecundario)!important;
+    border-radius: 4px;
+}
+.carousel-indicators .active{
+    color: var(--colorPrincipal) !important;
+}
+.carousel-item{
+    align-self: center;
+    width: 50%;
+    height: 50%;
+}
+.carousel img{
+    width: 50%;
+    align-self: center;
+} 
+.carousel p, .carousel h5{
+    color: var(--negro);
+    text-align: center;
+ }
 
 @media  (max-width:991px )  {
     .nav-link, .hero-text h1 {
@@ -252,7 +290,6 @@ footer h5:hover{
 
     .card img {
         width: 100%;
-        border-radius: unset;
         padding: 15%;
     }
     .card-body{
