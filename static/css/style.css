@@ -6,30 +6,7 @@
     --contraste:#FEEBEB;
     --colorSecundario:#9F1442;
 }
-.playfair-display-Titulo {
-  font-family: "Playfair Display", serif !important;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 25pt !important;
-}
 
-.playfair-Subtitulo {
-  font-family: "Playfair", serif !important; 
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
-  font-size: 20pt !important;
-}
-
-.playfair-Navegacion {
-  font-family: "Playfair", serif !important;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
-}
 
 .lora-Contenido {
   font-family: "Lora", serif !important;
@@ -275,6 +252,131 @@ footer h5:hover{
     text-align: center;
  }
 
+
+
+/* --- Estilos específicos para la página de Tienda --- */
+.tienda .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.tienda .card{
+    background-color: var(--blanco); 
+    border: 1px solid var(--colorSecundario); 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.tienda-title {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+    color: var(--colorPrincipal);
+    text-transform: uppercase;
+}
+.tienda img{
+    height: 250px; 
+    width: auto;
+    object-fit: contain;
+    padding: 15px;
+}
+
+
+
+
+.tienda .card-title {
+    color: var(--colorPrincipal);
+    margin-bottom: 0.5rem;
+}
+
+.tienda .card-text {
+    color: var(--negro);
+    overflow: hidden;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tienda .price {
+
+    color: var(--colorSecundario); 
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.tienda .btn {
+    background-color: var(--colorSecundario);
+    border-color: var(--colorSecundario);
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.tienda-btn:hover {
+    background-color: var(--colorPrincipal);
+    border-color: var(--colorPrincipal);
+}
+
+/* Fuentes */
+.playfair-display-Titulo {
+  font-family: "Playfair Display", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25pt !important;
+}
+
+.playfair-Subtitulo {
+  font-family: "Playfair", serif !important; 
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  font-size: 20pt !important;
+}
+
+.playfair-Navegacion {
+  font-family: "Playfair", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+}
+
+
+
+@media (max-width: 576px) {
+    .tienda-img {
+        height: 200px;
+    }
+    .tienda-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .historia-hero {
+        height: 300px;
+    }
+    .historia-hero-text p {
+        font-size: 1.5rem;
+    }
+    .hero-quote-author {
+        font-size: 1rem !important;
+    }
+    .historia-card-active {
+        padding: 1rem !important;
+    }
+    .historia-title {
+        font-size: 1.5rem;
+    }
+    .historia-img-active {
+        width: 100px;
+        height: 100px;
+    }
+    .historia-year, .historia-text {
+        text-align: center;
+    }
+}
+
 @media  (max-width:991px )  {
     .nav-link, .hero-text h1 {
         font-size:100%;
@@ -285,11 +387,12 @@ footer h5:hover{
     }
 
     #Logo{
-        height: 25%;
+        width: 50%;
     }
 
     .card img {
         width: 100%;
+        border-radius: unset;
         padding: 15%;
     }
     .card-body{
@@ -302,9 +405,7 @@ footer h5:hover{
     .nav-link, .hero-text h1 {
         font-size:75%;
     }
-    #Logo{
-        display: none;
-    }
+ 
 
 
 }
