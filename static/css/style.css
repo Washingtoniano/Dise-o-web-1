@@ -116,6 +116,11 @@ footer svg {
   margin: 2rem auto;
   
 }
+.card img {
+    object-fit: cover;
+    height: 100%;
+    border-radius: 30pt;
+}
 .carousel .card{
     width: auto;
     align-self: center;
