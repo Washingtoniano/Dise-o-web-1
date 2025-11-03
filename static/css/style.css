@@ -59,9 +59,7 @@ span{
     color: var(--contraste);
 }
 
-#Logo:hover{
-    height: 61pt;
-}
+
 
 a img{
     height: auto;
@@ -95,7 +93,7 @@ footer svg {
 
 .hero img {
   width: 100%;
-  height: auto;
+  height: 50%;
   object-fit: cover;
 }
 
@@ -165,14 +163,19 @@ footer svg {
   line-height: 1.8;
   margin-right: 10pt;
 }
-.card img {
+.index-card img {
     object-fit: cover;
     height: 100%;
     border-radius: 30pt;
 }
-#Vino{
+.card-Vino{
     background-color: var(--blanco);
     margin-bottom: 2rem;
+    
+}
+.card-Vino img{
+    height: 25%;
+    width: 50%;
 }
 #Blanco, #Tinto,#Formulario{
     background-color: var(--colorPrincipal);
@@ -242,12 +245,19 @@ footer h5:hover{
     width: 50%;
     height: 50%;
     margin: 0%;
+    z-index: 1;
+}
+.carousel-item .active{
+    z-index: 3;
 }
 .inicio .card{
 
     padding-right: 0;
     padding-left: 6%;
 
+}
+.inicio .card-body{
+    padding-right: 25pt;
 }
 .carousel img{
     width: 50%;
