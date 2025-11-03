@@ -8,12 +8,7 @@
 }
 
 
-.lora-Contenido {
-  font-family: "Lora", serif !important;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
+
 body{
     background-color: var(--contraste);
     font-family:"Lora" ;
@@ -86,14 +81,14 @@ footer svg {
 .hero {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 400px;
   overflow: hidden;
   background-color: var(--contraste);
 }
 
 .hero img {
   width: 100%;
-  height: 50%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -111,7 +106,6 @@ footer svg {
 .hero-text h1 {
   font-family: "Playfair Display";
   font-weight: 700;
-  font-size: 40pt;
   line-height: 1.4;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
@@ -188,9 +182,7 @@ footer svg {
 }
 
 
-.card-header-cata-h5 {
-    color: var(--letrasNav); 
-}
+
 
 .card-body p {
     font-size: 14px;
@@ -338,6 +330,13 @@ footer h5:hover{
 }
 
 /* Fuentes */
+.lora-Contenido {
+  font-family: "Lora", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 12pt!important;
+}
 .playfair-display-Titulo {
   font-family: "Playfair Display", serif !important;
   font-optical-sizing: auto;
@@ -352,7 +351,7 @@ footer h5:hover{
   font-weight: 900;
   font-style: normal;
   font-variation-settings:"wdth" 100;
-  font-size: 20pt !important;
+  font-size: 20pt !important ;
 }
 
 .playfair-Navegacion {
@@ -363,9 +362,16 @@ footer h5:hover{
   font-variation-settings:"wdth" 100;
 }
 
+
+.nav-link-active {
+    color: var(--letrasnav) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--letrasnav);
+    text-underline-offset: 5px;
+}
 @media  (max-width:991px )  {
-    .nav-link, .hero-text h1 {
-        font-size:100%;
+    .nav-link , .hero-text  {
+        font-size:100%!important;
 
     }
     .nav-link{
@@ -375,7 +381,10 @@ footer h5:hover{
         padding: 0%;
         margin:0%;
     }
-
+    #Logo{
+      width: 10%;
+      height: 10%;
+    }
 
 
     .card img {
@@ -386,28 +395,43 @@ footer h5:hover{
     .card-body{
         text-align: center;
     }
+    .carousel-item .card{
+        width: 100% !important;
+        height: 50% !important;
+        overflow:auto;
+    }
+
+
+    
 
 
 }
-.nav-link-active {
-    color: var(--letrasnav) !important;
-    text-decoration: underline;
-    text-decoration-color: var(--letrasnav);
-    text-underline-offset: 5px;
-}
+/* @media(max-width:768px){
+  .hero-text h1{
+    font-size: 30% !important;
+  }
+} */
 @media (max-width:500px){
     .nav-link{
-        font-size: 75%;
+        font-size: 75% !important;
     }
-    .hero-text h1 {
-        font-size:20%;
+    .hero-text h1{
+        font-size:100% !important;
+    }
+    .hero-text{
+        top: 30%;
+
+    }
+    .hero{
+        height: fit-content;
     }
     #Logo{
-        width: 50% ;
+        width: 10% ;
     }
-}
-@media (width:320px){
-    .hero-text{
-        font-size: 1px;
+    .hero img{
+        height: 50%;
+    }
+    .carousel-item{
+        width: 100%;
     }
 }
