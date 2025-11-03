@@ -229,7 +229,6 @@ footer h5:hover{
     display: flex;
     flex-direction: row;
     align-content: center;
-    align-items: center;
 }
 .carousel-indicators button{
     color: var(--colorSecundario)!important;
@@ -242,6 +241,13 @@ footer h5:hover{
     align-self: center;
     width: 50%;
     height: 50%;
+    margin: 0%;
+}
+.inicio .card{
+
+    padding-right: 0;
+    padding-left: 6%;
+
 }
 .carousel img{
     width: 50%;
@@ -251,6 +257,12 @@ footer h5:hover{
     color: var(--negro);
     text-align: center;
  }
+ 
+@media (prefers-reduced-motion: reduce) {
+    .carousel-item {
+        transition: opacity .15s linear!important;
+    }
+}
 
 
 
@@ -341,9 +353,6 @@ footer h5:hover{
   font-variation-settings:"wdth" 100;
 }
 
-
-
-
 @media  (max-width:991px )  {
     .nav-link, .hero-text h1 {
         font-size:100%;
@@ -351,6 +360,10 @@ footer h5:hover{
     }
     .nav-link{
         margin: 0%;
+    }
+    .inicio .card {
+        padding: 0%;
+        margin:0%;
     }
 
 
@@ -365,6 +378,12 @@ footer h5:hover{
     }
 
 
+}
+.nav-link-active {
+    color: var(--letrasnav) !important;
+    text-decoration: underline;
+    text-decoration-color: var(--letrasnav);
+    text-underline-offset: 5px;
 }
 @media (max-width:500px){
     .nav-link{

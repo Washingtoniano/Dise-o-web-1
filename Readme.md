@@ -1,3 +1,7 @@
-Se trabajo la página inicio ("index") y "cata", a la cual se puede acceder en la sección "VINOS" de la barra de navegación, el logo de la bodega redirige al inicio
-Presenta problemas:
-    La version en github representa la pagina, se intentara con un nuevo commit de cada pagina, con cambios minimos(un p al final)
+Se trabajo la página inicio ("index"), al cual se puede acceder mediante el logo de la empresa; cata, a la cual se puede acceder en la sección "VINOS" de la barra de navegación;Tienda e historia, a los cuales e puede acceder en sus respectivas secciones en la barra de navegación.
+
+Se deben solucionar:
+    -El responsive para telefonos, en especial el hero.
+    -El diseño de inicio en dispositovos móviles.
+    -Queda a discutir agregar un menu hamburguesa para la verión de celular.
+    -Se necesita modificar el slider para que se superpongan las imágenes como se ve el prototipo.
