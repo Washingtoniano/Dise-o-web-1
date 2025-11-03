@@ -343,39 +343,6 @@ footer h5:hover{
 
 
 
-@media (max-width: 576px) {
-    .tienda-img {
-        height: 200px;
-    }
-    .tienda-title {
-        font-size: 2rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .historia-hero {
-        height: 300px;
-    }
-    .historia-hero-text p {
-        font-size: 1.5rem;
-    }
-    .hero-quote-author {
-        font-size: 1rem !important;
-    }
-    .historia-card-active {
-        padding: 1rem !important;
-    }
-    .historia-title {
-        font-size: 1.5rem;
-    }
-    .historia-img-active {
-        width: 100px;
-        height: 100px;
-    }
-    .historia-year, .historia-text {
-        text-align: center;
-    }
-}
 
 @media  (max-width:991px )  {
     .nav-link, .hero-text h1 {
@@ -386,9 +353,7 @@ footer h5:hover{
         margin: 0%;
     }
 
-    #Logo{
-        width: 50%;
-    }
+
 
     .card img {
         width: 100%;
@@ -402,10 +367,18 @@ footer h5:hover{
 
 }
 @media (max-width:500px){
-    .nav-link, .hero-text h1 {
-        font-size:75%;
+    .nav-link{
+        font-size: 75%;
     }
- 
-
-
+    .hero-text h1 {
+        font-size:20%;
+    }
+    #Logo{
+        width: 50% ;
+    }
+}
+@media (width:320px){
+    .hero-text{
+        font-size: 1px;
+    }
 }
