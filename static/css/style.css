@@ -265,7 +265,10 @@ footer h5:hover{
         transition: opacity .15s linear!important;
     }
 }
-
+.icono:hover{
+    width: 2rem;
+    height: auto;
+}
 
 
 /* --- Estilos específicos para la página de Tienda --- */
