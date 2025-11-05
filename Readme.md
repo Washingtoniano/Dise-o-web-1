@@ -8,10 +8,9 @@ Se deben solucionar:
 Cambios a considerar:
     -Desarrollar "TURISMO" con los elementos en "VINOS".
     -Incluir menu hamburguesa para la version movil del home.
-    -Eliminar del footer el texto y reemplazarlos por un modal.
     -En "TURISMO" se pueden incrustar mapas, imagenes, formularios etc.
     -Incluir un ancla top para subir al inicio de la pagina.
     -Incluir acordeon ("puede ser para agrupar vinos). 
     -El carrusel, se puede realizar con grupos de cards o diseñar las imagenes para que parescan 3.
-
+    -Las imagenes de "HISTORIA" pueden posicionarse horizontalmente para ocupar mas espacio
 Una vez realizado todas las correcciones, debe coincidir el figma y pagina

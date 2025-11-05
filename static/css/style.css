@@ -23,8 +23,8 @@ h1{
 }
 
 .texto{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin:2% 15% ;
+
     text-align: center;
 }
 
@@ -62,7 +62,6 @@ footer{
     text-align: center;
 }
 footer h5 {
-  color: var(--blanco);
   font-size: 13pt;
   margin-top: 1rem;
 }
