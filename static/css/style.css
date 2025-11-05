@@ -60,6 +60,7 @@ footer{
     background-color: var(--colorPrincipal);
     color: var(--letrasnav);
     text-align: center;
+    margin: 0;
 }
 footer h5 {
   font-size: 13pt;
@@ -69,7 +70,9 @@ footer h5 {
 footer svg {
   width: 30px;
   height: 30px;
-
+}
+footer .mb-4 {
+    align-self: center;
 }
 .hero {
   position: relative;
@@ -169,6 +172,8 @@ footer svg {
 }
 .ImaInic{
     object-fit: cover;
+    height: 100%;
+    width: 100%;
     padding: 4% 0;
 
 }
@@ -403,6 +408,18 @@ footer h5:hover{
         height: 50% !important;
         overflow:auto;
     }
+    .ImaInic{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        padding: 4% 4%;
+
+    }
+    .inicio-filas h5, .inicio-filas p{
+        padding-left: 10%;
+        padding-right: 5%;
+        padding-top: 2%;
+    }
 
 
     
@@ -414,12 +431,12 @@ footer h5:hover{
     font-size: 30% !important;
   }
 } */
-@media (max-width:500px){
+@media (max-width:565px){
     .nav-link{
-        font-size: 75% !important;
+        font-size: 75% ;
     }
     .hero-text h1{
-        font-size:100% !important;
+        font-size:100% ;
     }
     .hero-text{
         top: 30%;
@@ -438,4 +455,5 @@ footer h5:hover{
     .carousel-item{
         width: 100%;
     }
+
 }
