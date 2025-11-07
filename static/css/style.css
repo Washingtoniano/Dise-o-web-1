@@ -175,6 +175,7 @@ footer .mb-4 {
     flex-direction: row;
     flex-wrap: wrap;
     align-content: center;
+    height: fit-content(100%);
 }
 .inicio-filas h5, .inicio-filas p{
     padding-left: 10%;
@@ -568,8 +569,7 @@ footer h5:hover{
     }
     .carousel-item .card{
         width: 100% !important;
-        /* height: 50% !important; */
-        height: auto;
+        height: 50% !important;
         overflow:auto;
     }
     .ImaInic{
