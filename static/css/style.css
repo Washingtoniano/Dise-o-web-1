@@ -12,6 +12,7 @@
 body{
     background-color: var(--contraste);
     font-size: 16px;
+    height: auto;
 
 }
 
