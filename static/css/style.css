@@ -497,6 +497,10 @@ footer h5:hover{
         padding: 4% 4%;
 
     }
+    .inicio-filas{
+        display: block;
+        /* text-align: center; */
+    }
     .inicio-filas h5, .inicio-filas p{
         padding-left: 10%;
         padding-right: 5%;
