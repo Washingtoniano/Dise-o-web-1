@@ -12,7 +12,6 @@
 body{
     background-color: var(--contraste);
     font-size: 16px;
-    height: 100%;
 
 }
 
@@ -381,6 +380,42 @@ footer h5:hover{
     flex-direction: row;
     justify-content: space-between;
 }
+/* --- Estilos para las categorías de vinos (Pills/Tabs) --- */
+
+/* 1. Estilo base para los botones de categoría */
+.nav-pills .nav-link {
+    /* Color de texto oscuro para buen contraste */
+    color: #333; 
+    /* Fondo blanco o transparente para que se vea el borde */
+    background-color: transparent; 
+    /* Aplica el borde con el color "Vintage" (#AC9758) */
+    border: 2px solid #AC9758;
+    /* Espacio entre los botones */
+    margin: 0 10px;
+    /* Bordes ligeramente redondeados (opcional, por defecto son redondeados por Bootstrap) */
+    border-radius: 0.5rem;
+    /* Para que se vea bien el texto grande */
+    padding: 0.5rem 1.5rem;
+    /* Transición suave para el efecto hover/active */
+    transition: all 0.3s ease;
+}
+
+/* 2. Estilo cuando el mouse está sobre el botón (hover) */
+.nav-pills .nav-link:hover {
+    color: #fff; /* Texto blanco al pasar el mouse */
+    background-color: #AC9758; /* Fondo con el color "Vintage" */
+    border-color: #AC9758;
+}
+
+/* 3. Estilo para el botón de categoría ACTIVO */
+.nav-pills .nav-link.active {
+    /* Invertir los colores para resaltar la categoría activa */
+    color: #fff;
+    background-color: #AC9758; /* Fondo con el color "Vintage" */
+    border-color: #AC9758;
+    /* Quitar la sombra que Bootstrap a veces aplica a los activos para más claridad */
+    box-shadow: none; 
+}
 /* Fuentes */
 .lora-Contenido {
   font-family: "Lora", serif !important;
@@ -456,6 +491,7 @@ footer h5:hover{
     /* Borde dorado para destacar las cards */
     border: 4px solid var(--letrasnav) !important;
 }
+
 /* Separa el formulario del footer */
 #Formulario {
     margin-bottom: 4rem !important; 
