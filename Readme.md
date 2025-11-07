@@ -3,13 +3,14 @@ Se trabajo la página inicio ("index"), al cual se puede acceder mediante el log
 Desarrollado:
     -Se implento el menu hamburguesa.
     -La seccion "HISTORIA" tienen las imagenes con los textos y tarjetas responsivas.
-    -Se corrigierons los botones de las tarjetas en "TIENDA"
-    -Se corrigio el footer para todas la paginas
+    -Se corrigierons los botones de las tarjetas en "TIENDA".
+    -Se corrigio el footer para todas la paginas.
+    -Se alineo los items del nav-bar.
 
 
 Se deben solucionar:
     -El responsive para telefonos, en especial el hero.
-    -Los links de la barra de navegación no estan bien centrados.
+    -Los links de la barra de navegación no estan bien centrados. Preguntar si estan bien centrados.
     -Desarrollar "TURISMO" con los elementos en "VINOS".
 
 Cambios a considerar:
