@@ -4,6 +4,7 @@ Desarrollado:
     -Se implento el menu hamburguesa.
     -La seccion "HISTORIA" tienen las imagenes con los textos y tarjetas responsivas.
     -Se corrigierons los botones de las tarjetas en "TIENDA"
+    -Se corrigio el footer para todas la paginas
 
 
 Se deben solucionar:

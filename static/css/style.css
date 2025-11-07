@@ -338,7 +338,7 @@ footer h5:hover{
     background-color: var(--blanco);
 }
 
-.btn{
+.inicio.btn{
     background-color: var(--colorSecundario);
     color: var(--blanco);
     border-radius: 30%;
