@@ -136,6 +136,9 @@ footer .mb-4 {
 #Cambio {
     background-color: var(--colorSecundario);
     color: var(--blanco);
+}
+#Cambio .modal-body h5{
+    color: var(--colorSecundario);
 
 }
 .carousel-indicators{
@@ -143,10 +146,13 @@ footer .mb-4 {
 }
 .carousel-indicators [data-bs-target]{
     background-color: var(--colorPrincipal);
-    height: 5px;
+    height: 15px;
     width: 40px;
     border-radius:47%;
 
+}
+#carouselHistoria .card{
+    width: 100%;
 }
 #Cambio h5{
     color: var(--blanco);
@@ -176,6 +182,9 @@ footer .mb-4 {
 }
 .inicio-filas h5{
     color: var(--colorSecundario);
+}
+.inicio .d-flex{
+    flex-direction: column;
 }
 .ImaInic{
     object-fit: cover;
@@ -243,8 +252,12 @@ footer h5:hover{
 }
 #Carrusel-inicio{
     position: relative;
-    left: 15%;
+    left: 10%;
 }
+/* #Carrusel-final{
+    position: relative;
+    right: 10%;
+} */
 .carousel-inner{
     display: flex;
     flex-direction: row;
@@ -263,13 +276,19 @@ footer h5:hover{
     height: 50%;
     margin: 0%;
     z-index: 1;
+    transition: transform 1s ease, opacity 1s ease;
+
 }
 .carousel-item .active{
     z-index: 3;
 }
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: var(--colorSecundario);
 
-.carousel img{
-    width: 50%;
+}
+
+.carousel-item img{
+    height: 80vh;
     align-self: center;
 } 
 .carousel p, .carousel h5{
@@ -277,7 +296,7 @@ footer h5:hover{
     text-align: center;
  }
  .carousel{
-    padding-bottom: 5%;
+    padding-bottom: 3%;
  }
  
 @media (prefers-reduced-motion: reduce) {
@@ -315,9 +334,17 @@ footer h5:hover{
     object-fit: contain;
     padding: 15px;
 }
+.tienda .card-footer{
+    background-color: var(--blanco);
+}
 
-
-
+.btn{
+    background-color: var(--colorSecundario);
+    color: var(--blanco);
+    border-radius: 30%;
+    width: 25%;
+    align-self: center;
+}
 
 .tienda .card-title {
     color: var(--colorPrincipal);
@@ -467,11 +494,24 @@ footer h5:hover{
 
 
 }
-/* @media(max-width:768px){
-  .hero-text h1{
-    font-size: 30% !important;
+ @media(max-width:768px){
+
+  .card{
+    height: auto;
+    width: 100%!important;
   }
-} */
+  .card img{
+    padding: 0!important;
+
+  }
+  .carousel-item img{
+    height: 100%;
+  }
+  .carousel-item{
+    width: 100%;
+    height: 50%;
+  }
+} 
 @media (max-width:565px){
     .nav-link{
         font-size: 75% ;
@@ -519,6 +559,3 @@ footer h5:hover{
 
 
 /* Mantener el comportamiento móvil */
-@media (max-width: 991px) {
-
-}
