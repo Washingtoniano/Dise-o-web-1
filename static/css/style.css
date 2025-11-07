@@ -30,11 +30,18 @@ h1{
 
 .navbar{
     background-color: var(--colorPrincipal)!important;
-    height: 100px;
+    height: auto;
     padding: 0% !important;
-
- 
 }
+ .navbar-toggler-icon{
+    background-color: var(--letrasnav);
+    color: var(--letrasnav);
+ }
+
+ .navbar-collapse{
+    margin-right: 0;
+ }
+
 span{
     color: var(--letrasnav) !important;
 }
@@ -204,6 +211,7 @@ footer .mb-4 {
 
 .nav-item{
     color: var(--letrasnav);
+    z-index: 1;
 }
 
 .row{
@@ -232,6 +240,10 @@ form button:hover {
 }
 footer h5:hover{
     text-decoration:underline;
+}
+#Carrusel-inicio{
+    position: relative;
+    left: 15%;
 }
 .carousel-inner{
     display: flex;
@@ -263,6 +275,9 @@ footer h5:hover{
 .carousel p, .carousel h5{
     color: var(--negro);
     text-align: center;
+ }
+ .carousel{
+    padding-bottom: 5%;
  }
  
 @media (prefers-reduced-motion: reduce) {
@@ -334,7 +349,10 @@ footer h5:hover{
     background-color: var(--colorPrincipal);
     border-color: var(--colorPrincipal);
 }
-
+.navbar-nav{
+    flex-direction: row;
+    justify-content: space-between;
+}
 /* Fuentes */
 .lora-Contenido {
   font-family: "Lora", serif !important;
@@ -377,18 +395,41 @@ footer h5:hover{
     text-decoration-color: var(--letrasnav);
     text-underline-offset: 5px;
 }
+/* @media (min-width: 992px) {
+  .navbar-nav {
+    margin: 0 auto; centra los items
+    text-align: center;
+  }
+} */
+
 @media  (max-width:991px )  {
-    .nav-link , .hero-text  {
+
+
+
+    /* .navbar-toggler {
+        order: 1; el menú a la izquierda
+    } */
+ 
+
+/*
+    .navbar-collapse {
+        text-align: right; menú hamburguesa a la derecha al desplegar
+    }
+
+    .navbar-nav {
+        text-align: right;
+    } */
+     .hero-text  {
         font-size:100%!important;
 
     }
-    .nav-link{
+
+     .nav-link{
+
         margin: 0%;
-    }
-    .inicio .card {
-        padding: 0%;
-        margin:0%;
-    }
+        float: right;
+    } 
+
     /* #Logo{
       width: 25%;
       height: 25%;
@@ -455,5 +496,29 @@ footer h5:hover{
     .carousel-item{
         width: 100%;
     }
+
+}
+/* // `xs` returns only a ruleset and no media query
+// ... { ... }
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... } */
+/* Centrar los items del navbar solo en pantallas grandes */
+
+
+/* Mantener el comportamiento móvil */
+@media (max-width: 991px) {
 
 }

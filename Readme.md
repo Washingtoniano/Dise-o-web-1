@@ -7,7 +7,7 @@ Se deben solucionar:
     -Se necesita modificar el slider para que se superpongan las imágenes como se ve el prototipo.
 Cambios a considerar:
     -Desarrollar "TURISMO" con los elementos en "VINOS".
-    -Incluir menu hamburguesa para la version movil del home.
+    -Alinear el menu hamburguesa para que quede centrado.
     -En "TURISMO" se pueden incrustar mapas, imagenes, formularios etc.
     -Incluir un ancla top para subir al inicio de la pagina.
     -Incluir acordeon ("puede ser para agrupar vinos). 
