@@ -568,7 +568,8 @@ footer h5:hover{
     }
     .carousel-item .card{
         width: 100% !important;
-        height: 50% !important;
+        /* height: 50% !important; */
+        height: auto;
         overflow:auto;
     }
     .ImaInic{
