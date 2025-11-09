@@ -7,7 +7,12 @@
     --colorSecundario:#9F1442;
 }
 
+.Ancla-1{
+    background-color: var(--letrasnav);
+    position: absolute;
+    z-index: 8;
 
+}
 
 body{
     background-color: var(--contraste);
