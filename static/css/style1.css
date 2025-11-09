@@ -7,12 +7,7 @@
     --colorSecundario:#9F1442;
 }
 
-.Ancla-1{
-    background-color: var(--letrasnav);
-    position: absolute;
-    z-index: 8;
 
-}
 
 body{
     background-color: var(--contraste);
@@ -315,6 +310,82 @@ footer h5:hover{
 }
 
 
+/* --- Estilos específicos para las Cards de Turismo --- */
+
+/* --- Espaciado entre Cards y Formulario --- */
+
+/* Separa las tarjetas del formulario */
+.row.row-cols-1.row-cols-md-3.g-4.mb-5 {
+    /* Aumenta la separación */
+    margin-bottom: 5rem !important; 
+    margin-top: 3rem !important;
+}
+
+/* Separa el formulario del footer */
+#Formulario {
+    margin-bottom: 4rem !important; 
+}
+
+/* --- Asegurando el Fondo del Footer --- */
+
+footer {
+    /* Estas reglas aseguran que el fondo del footer ocupe el 100% del ancho,
+       especialmente si había alguna interferencia anterior. */
+    width: 100%; 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    /* (Asegúrate de que var(--colorPrincipal) esté definido en tu CSS) */
+}
+
+
+
+/* Media query para asegurar que se vea bien en móviles */
+@media (max-width: 575px) {
+    footer .row {
+        justify-content: space-around; /* Distribuye mejor los elementos */
+    }
+    footer .col-sm-4 {
+        margin-bottom: 1.5rem !important; /* Espacio extra para el logo */
+    }
+    footer .col-sm-2 {
+        margin: 0;
+        padding: 0.5rem; /* Pequeño relleno para los iconos */
+    }
+}
+
+.tour-card-header {
+    /* Color principal de la navegación (Bordeaux) */
+    background-color: var(--colorPrincipal) !important;
+    /* Color de letras de navegación (Dorado/Vintage) */
+    color: var(--letrasnav) !important;
+    border-bottom: 2px solid var(--letrasnav);
+}
+
+.tour-card-body {
+    /* Fondo de contraste (Rosado muy claro) */
+    background-color: var(--contraste);
+}
+
+.tour-card-subtitle {
+    /* Color principal (Bordeaux) para el precio */
+    color: var(--colorPrincipal) !important;
+    font-weight: bold;
+}
+
+.tour-card-list li {
+    /* Texto normal (Negro) y fuente Lora para el contenido */
+    color: var(--negro);
+    font-family: "Lora", serif;
+}
+
+
+/* Estilo para el borde de la card "Premium" destacada */
+.tour-card-premium {
+    /* Borde dorado para destacar las cards */
+    border: 4px solid var(--letrasnav) !important;
+}
+
 /* --- Estilos específicos para la página de Tienda --- */
 .tienda .card:hover{
     transform: translateY(-5px);
@@ -385,6 +456,41 @@ footer h5:hover{
     flex-direction: row;
     justify-content: space-between;
 }
+/* Fuentes */
+.lora-Contenido {
+  font-family: "Lora", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem; /*12pt*/
+}
+.playfair-display-Titulo {
+  font-family: "Playfair Display", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 2.083rem ;/*25 pt*/
+}
+
+.playfair-Subtitulo {
+  font-family: "Playfair", serif !important; 
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  font-size: 1.667rem ; /*20pt*/
+}
+
+.playfair-Navegacion {
+  font-family: "Playfair", serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:"wdth" 100;
+  /* font-size: 1rem;*/  /*12pt*/ 
+
+}
+
 /* --- Estilos para las categorías de vinos (Pills/Tabs) --- */
 
 /* 1. Estilo base para los botones de categoría */
@@ -421,86 +527,7 @@ footer h5:hover{
     /* Quitar la sombra que Bootstrap a veces aplica a los activos para más claridad */
     box-shadow: none; 
 }
-/* Fuentes */
-.lora-Contenido {
-  font-family: "Lora", serif !important;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 1rem; /*12pt*/
-}
-.playfair-display-Titulo {
-  font-family: "Playfair Display", serif !important;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 2.083rem ;/*25 pt*/
-}
 
-.playfair-Subtitulo {
-  font-family: "Playfair", serif !important; 
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
-  font-size: 1.667rem ; /*20pt*/
-}
-
-.playfair-Navegacion {
-  font-family: "Playfair", serif !important;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  font-variation-settings:"wdth" 100;
-  /* font-size: 1rem;*/  /*12pt*/ 
-
-}
-/* --- Estilos específicos para las Cards de Turismo --- */
-
-/* --- Espaciado entre Cards y Formulario --- */
-
-/* Separa las tarjetas del formulario */
-.row.row-cols-1.row-cols-md-3.g-4.mb-5 {
-    /* Aumenta la separación */
-    margin-bottom: 5rem !important; 
-    margin-top: 3rem !important;
-}
-.tour-card-header {
-    /* Color principal de la navegación (Bordeaux) */
-    background-color: var(--colorPrincipal) !important;
-    /* Color de letras de navegación (Dorado/Vintage) */
-    color: var(--letrasnav) !important;
-    border-bottom: 2px solid var(--letrasnav);
-}
-
-.tour-card-body {
-    /* Fondo de contraste (Rosado muy claro) */
-    background-color: var(--contraste);
-}
-
-.tour-card-subtitle {
-    /* Color principal (Bordeaux) para el precio */
-    color: var(--colorPrincipal) !important;
-    font-weight: bold;
-}
-
-.tour-card-list li {
-    /* Texto normal (Negro) y fuente Lora para el contenido */
-    color: var(--negro);
-    font-family: "Lora", serif;
-}
-
-
-/* Estilo para el borde de la card "Premium" destacada */
-.tour-card-premium {
-    /* Borde dorado para destacar las cards */
-    border: 4px solid var(--letrasnav) !important;
-}
-
-/* Separa el formulario del footer */
-#Formulario {
-    margin-bottom: 4rem !important; 
-}
 
 .nav-link-active {
     color: var(--letrasnav) !important;
