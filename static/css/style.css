@@ -146,6 +146,15 @@ footer .mb-4 {
     color: var(--colorSecundario);
 
 }
+ #Cambio button {
+    background-color: var(--contraste);
+    color: var(--negro);
+
+
+} 
+ #Cambio h5{
+    color: var(--blanco);
+}
 .carousel-indicators{
     margin-bottom: 0% !important;
 }
@@ -159,9 +168,7 @@ footer .mb-4 {
 #carouselHistoria .card{
     width: 100%;
 }
-#Cambio h5{
-    color: var(--blanco);
-}
+
 .card-body h5 {
 
   margin-bottom: 1rem;
