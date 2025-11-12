@@ -159,7 +159,7 @@ footer .mb-4 {
     margin-bottom: 0% !important;
 }
 .carousel-indicators [data-bs-target]{
-    background-color: var(--colorPrincipal);
+    background-color: var(--colorSecundario);
     height: 15px;
     width: 40px;
     border-radius:47%;
@@ -176,7 +176,7 @@ footer .mb-4 {
 }
 
 .card-body p {
-  font-size: 14pt;
+  /* font-size: 14pt; */
   text-align: justify;
   line-height: 1.8;
   margin-right: 10pt;
@@ -266,10 +266,10 @@ footer h5:hover{
     position: relative;
     left: 10%;
 }
-/* #Carrusel-final{
+ #Carrusel-final{
     position: relative;
-    right: 10%;
-} */
+    right: 5%;
+} 
 .carousel-inner{
     display: flex;
     flex-direction: row;
@@ -291,18 +291,26 @@ footer h5:hover{
     transition: transform 1s ease, opacity 1s ease;
 
 }
-.carousel-item .active{
+.escritorio .carousel-item.active{
     z-index: 3;
+    display: flex;
+    justify-content: center;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon{
     background-color: var(--colorSecundario);
 
 }
 
-.carousel-item img{
-    height: 80vh;
+.escritorio .carousel-item img{
+    height: 70vh;
     align-self: center;
-} 
+}
+.Mobil .carousel-item img
+{
+    height: 60vh;
+    
+
+}
 .carousel p, .carousel h5{
     color: var(--negro);
     text-align: center;
@@ -441,7 +449,7 @@ footer h5:hover{
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  font-size: 2.083rem ;/*25 pt*/
+  font-size: 2rem ;/*25 pt*/
 }
 
 .playfair-Subtitulo {
@@ -450,7 +458,7 @@ footer h5:hover{
   font-weight: 900;
   font-style: normal;
   font-variation-settings:"wdth" 100;
-  font-size: 1.667rem ; /*20pt*/
+  font-size: 1.7rem ; /*20pt*/
 }
 
 .playfair-Navegacion {
@@ -521,6 +529,28 @@ footer h5:hover{
     text-align: center;
   }
 } */
+ /* @media  (min-width:2560px){
+    .playfair-Subtitulo{
+        font-size: 1.7rem 
+    }
+        .playfair-display-Titulo
+        {
+        font-size: 2rem;
+    }
+        }
+     */
+ 
+@media (min-width:2014px){
+    .lora-Contenido{
+        font-size: 1rem; 
+    }
+    .playfair-display-Titulo{
+        
+        font-size: 2rem;
+    }
+}
+
+    
 
 @media  (max-width:991px )  {
 
@@ -529,7 +559,7 @@ footer h5:hover{
         margin-top: 2%;
     }
     .Mobil img{
-        height: auto;
+        /* height: auto; */
         padding: 0!important;
 
     }
@@ -627,12 +657,18 @@ footer h5:hover{
     .nav-link{
         font-size: 75% ;
     }
+    .playfair-display-Titulo{
+        font-size:100% ;
+
+    }
+    .lora-Contenido{
+        font-size: 100%;
+    }
     .hero-text h1{
         font-size:100% ;
     }
     .hero-text{
         top: 30%;
-
     }
     .hero{
         height: fit-content;
@@ -644,10 +680,37 @@ footer h5:hover{
     .hero img{
         height: 50%;
     }
-    .carousel-item{
+    /* .carousel-item{
         width: 100%;
+    } */
+
+}
+@media (max-width:340px) {
+    .Mobil img{
+        padding-top: 2pt;
+        height: 30vh!important;
+        /* width: auto; */
+    }
+    .Mobil .carousel-item{
+        width: 80%;
+
     }
 
+    .Mobil .card-body{
+        padding-top: 2pt!important;
+
+        height: 50vh;
+    }
+    .Mobil .card-body{
+        font-size: 1rem;
+    }
+    .Mobil .card-body h5{
+        margin: 0%;
+    }
+
+    /* .Mobil .carousel-item{
+        height: 50%;
+    } */
 }
 /* // `xs` returns only a ruleset and no media query
 // ... { ... }
