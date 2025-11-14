@@ -315,9 +315,9 @@ footer h5:hover{
     color: var(--negro);
     text-align: center;
  }
- .carousel{
+ /* .carousel{
     padding-bottom: 3%;
- }
+ } */
  
 @media (prefers-reduced-motion: reduce) {
     .carousel-item {
@@ -361,7 +361,7 @@ footer h5:hover{
 .inicio .btn{
     background-color: var(--colorSecundario);
     color: var(--blanco);
-    border-radius: 30%;
+    /* border-radius: 30%; */
     width: 25%;
     align-self: center;
 }
@@ -553,6 +553,9 @@ footer h5:hover{
     
 
 @media  (max-width:991px )  {
+      .carousel{
+    padding-bottom: 3%;
+ } 
 
     .Mobil .carousel-item .card{
         border-radius: 0%;
@@ -661,6 +664,9 @@ footer h5:hover{
         font-size:100% ;
 
     }
+    .playfair-Subtitulo{
+        font-size: 125%;
+    }
     .lora-Contenido{
         font-size: 100%;
     }
@@ -685,6 +691,23 @@ footer h5:hover{
     } */
 
 }
+@media (max-width:376px){
+    .Mobil .carousel-item img{
+        height: 30vh !important;
+    }
+    .Mobil.carousel-item .card{
+        height: 50vh;
+    }
+    .Mobil .card .card-body p{
+        line-height: 1;
+    }
+    .Mobil .card-body, .Mobil .card-body h5, .Mobil .card-body p{
+        padding: 0%;
+        margin: 0%;
+    }
+
+
+}
 @media (max-width:340px) {
     .Mobil img{
         padding-top: 2pt;
@@ -699,7 +722,7 @@ footer h5:hover{
     .Mobil .card-body{
         padding-top: 2pt!important;
 
-        height: 50vh;
+        /* height: 50vh; */
     }
     .Mobil .card-body{
         font-size: 1rem;
