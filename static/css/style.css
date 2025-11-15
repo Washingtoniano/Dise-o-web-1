@@ -633,8 +633,14 @@ footer h5:hover{
         padding-top: 2%;
     }
 
-
+@media (max-width:420) and (min-width:412) and (min-height:900) and (max-height:930){
+    .Mobil .carousel-item img
+{
+    height: 20vh;
     
+
+}
+}
 
 
 }
