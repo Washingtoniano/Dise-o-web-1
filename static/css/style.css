@@ -676,9 +676,11 @@ footer h5:hover{
     .hero-text{
         top: 30%;
     }
-    /* .carousel-item{
-        width: 75vw;
-    } */
+    .carousel-item{
+
+        padding-top: 2%;
+        /* width: 75vw; */
+    }
     .hero{
         height: fit-content;
     }
@@ -709,8 +711,9 @@ footer h5:hover{
     .Mobil .carousel-item img{
         height: 30vh !important;
     }
-    .Mobil.carousel-item .card{
+    .Mobil .carousel-item .card{
         height: 50vh;
+        width: 60vw;
     }
     .Mobil .card .card-body p{
         line-height: 1;
