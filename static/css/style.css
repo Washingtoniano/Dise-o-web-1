@@ -307,7 +307,7 @@ footer h5:hover{
 }
 .Mobil .carousel-item img
 {
-    height: 60vh;
+    height: 60vw;
     
 
 }
@@ -720,6 +720,9 @@ footer h5:hover{
     .Mobil .carousel-item .card{
         height: 50vh;
         width: 60vw;
+    }
+    .Mobil .carousel-item{
+        width: 100%;
     }
     .Mobil .card .card-body p{
         line-height: 1;
